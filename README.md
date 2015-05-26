@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 vagrant-lamp-ansible
 ----------------------
 
@@ -43,3 +44,10 @@ After bringing up the virtual machine, open this url in your browser: http://loc
 When you're done playing with the VM, you can delete it:
 
     vagrant destroy
+=======
+# chronicles
+
+1.  Set up basic Orchestrated environment using Vagrant and Ansible at https://github.com/pesterhazy/vagrant-lamp-ansible
+2.  Get a complete startter kit for codeIgniter at https://github.com/JasonBaier/ci3-fire-starter and https://github.com/JasonBaier/ci-fire-starter for version 2.0.x
+3. Worry about the business logic
+>>>>>>> 3d996d1ccfaa9e3d9d0ad6c6dad09d61deec4e94
