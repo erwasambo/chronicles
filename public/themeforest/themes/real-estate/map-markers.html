@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ThemeKit</title>
+    <!-- Compressed Vendor BUNDLE
+    Includes vendor (3rd party) styling such as the customized Bootstrap and other 3rd party libraries used for the current theme/module -->
+    <link href="css/vendor.min.css" rel="stylesheet">
+    <!-- Compressed Theme BUNDLE
+Note: The bundle includes all the custom styling required for the current theme, however
+it was tweaked for the current theme/module and does NOT include ALL of the standalone modules;
+The bundle was generated using modern frontend development tools that are provided with the package
+To learn more about the development process, please refer to the documentation. -->
+    <link href="css/theme-bundle.min.css" rel="stylesheet">
+    <!-- Compressed Theme CORE
+This variant is to be used when loading the separate styling modules -->
+    <!-- <link href="css/theme.core.min.css" rel="stylesheet"> -->
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL modules are 100% compatible -->
+    <!-- <link href="css/module-essentials.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-layout.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-sidebar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-sidebar-skins.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-navbar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-media.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-timeline.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-cover.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-chat.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-charts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-maps.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-alerts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-background.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-buttons.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-calendar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-progress-bars.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-text.min.css" rel="stylesheet" /> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- If you don't need support for Internet Explorer <= 8 you can safely remove these -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <!-- Wrapper required for sidebar transitions -->
+    <div class="st-container">
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#sidebar-menu" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">ThemeKit</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <form class="navbar-form navbar-left margin-none">
+                        <div class="search-1">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-search"></i></span>
+                                <input type="text" class="form-control form-control-w-150" placeholder="Search ..">
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Login -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-fw fa-lock"></i> Login
+                            </a>
+                            <div class="dropdown-menu dropdown-size-280">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-shield"></i></span>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">Login <i class="fa fa-sign-in"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <!-- // END login -->
+                        <!-- Sign up -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-fw fa-plus"></i> Sign Up
+                            </a>
+                            <div class="dropdown-menu dropdown-size-280">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-control-default">
+                                                <label for="exampleInputFirstName">First name</label>
+                                                <input type="email" class="form-control" id="exampleInputFirstName" placeholder="Your first name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-control-default">
+                                                <label for="exampleInputLastName">Last name</label>
+                                                <input type="email" class="form-control" id="exampleInputLastName" placeholder="Your last name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-control-default required">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group form-control-default required">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </li>
+                        <!-- // END sign up -->
+                        <!-- user -->
+                        <li class="dropdown user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><i class="fa fa-user"></i>Profile</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-wrench"></i>Settings</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- // END user -->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+        <aside class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop" id=sidebar-menu data-type=collapse>
+            <div data-scrollable>
+                <ul class="sidebar-menu sm-bordered sm-icons-block sm-icons-right">
+                    <li class="hasSubmenu">
+                        <a href="#discover"><i class="fa fa-star"></i><span>Discover</span></a>
+                        <ul id="discover">
+                            <li><a href="index.html"><i class="fa fa-map-marker"></i><span>Full screen Map</span></a>
+                            </li>
+                            <li><a href="map-listing-list.html"><i class="fa fa-list"></i><span>Map Listing - List</span></a>
+                            </li>
+                            <li><a href="map-listing-grid.html"><i class="fa fa-th"></i><span>Map Listing - Grid</span></a>
+                            </li>
+                            <li><a href="listing.html"><i class="fa fa-list"></i><span>Listing - List</span></a>
+                            </li>
+                            <li><a href="listing-grid.html"><i class="fa fa-th"></i><span>Listing - Grid</span></a>
+                            </li>
+                            <li><a href="listing-map.html"><i class="fa fa-map-marker"></i><span>Listing - Map</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hasSubmenu">
+                        <a href="#property"><i class="fa fa-home"></i><span>Property</span></a>
+                        <ul id="property">
+                            <li><a href="map-property.html"><i class="fa fa-map-marker"></i><span>Map + Property</span></a>
+                            </li>
+                            <li><a href="property.html"><i class="fa fa-list"></i><span>Property details</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="map-edit.html"><i class="fa fa-pencil"></i><span>Add property</span></a>
+                    </li>
+                </ul>
+                <h4 class="category">Map features</h4>
+                <ul class="sidebar-menu sm-icons-block sm-active-item-bg sm-icons-right">
+                    <li><a href="map-filters.html"><i class="fa fa-search"></i><span>Map Filters</span></a>
+                    </li>
+                    <li><a href="map-themes.html"><i class="fa fa-eyedropper"></i><span>Map Themes</span></a>
+                    </li>
+                    <li class="active"><a href="map-markers.html"><i class="fa fa-map-marker"></i><span>Map Markers</span></a>
+                    </li>
+                </ul>
+                <h4 class="category">Website pages</h4>
+                <div class="sidebar-block">
+                    <ul class="list-group list-group-menu">
+                        <li class="list-group-item"><a href="front-home-slider.html">Home + Slider</a>
+                        </li>
+                        <li class="list-group-item"><a href="front-home-map.html">Home + Map</a>
+                        </li>
+                        <li class="list-group-item"><a href="front-listing-list.html">Listing - List</a>
+                        </li>
+                        <li class="list-group-item"><a href="front-listing-grid.html">Listing - Grid</a>
+                        </li>
+                        <li class="list-group-item"><a href="front-property.html">Property</a>
+                        </li>
+                    </ul>
+                </div>
+                <h4 class="category">Versions</h4>
+                <div class="sidebar-block text-center">
+                    <a class="btn btn-primary btn-block" href="../angular/index.html">
+                        <strong>AngularJS</strong>
+                    </a>
+                    <a class="btn btn-primary active btn-block" href="index.html">
+                        <strong>HTML</strong>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- sidebar effects OUTSIDE of st-pusher: -->
+        <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+        <!-- content push wrapper -->
+        <div class="st-pusher">
+            <!-- sidebar effects INSIDE of st-pusher: -->
+            <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+            <!-- this is the wrapper for the content -->
+            <div class="st-content">
+                <!-- extra div for emulating position:fixed of the menu -->
+                <div class="st-content-inner" id="content">
+                    <div class="jumbotron text-center bg-transparent margin-none">
+                        <h1>Map markers</h1>
+                        <p>80+ unique Google Maps markers in 10 colors organised into a complete and diverse collection for points of interest, properties, buildings, etc.</p>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Bar</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-01.png" alt="marker" /> bar-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-02.png" alt="marker" /> bar-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-03.png" alt="marker" /> bar-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-04.png" alt="marker" /> bar-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-05.png" alt="marker" /> bar-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-06.png" alt="marker" /> bar-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-07.png" alt="marker" /> bar-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-08.png" alt="marker" /> bar-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-09.png" alt="marker" /> bar-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/bar-10.png" alt="marker" /> bar-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Building</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-01.png" alt="marker" /> building-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-02.png" alt="marker" /> building-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-03.png" alt="marker" /> building-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-04.png" alt="marker" /> building-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-05.png" alt="marker" /> building-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-06.png" alt="marker" /> building-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-07.png" alt="marker" /> building-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-08.png" alt="marker" /> building-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-09.png" alt="marker" /> building-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/building-10.png" alt="marker" /> building-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Event</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-01.png" alt="marker" /> event-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-02.png" alt="marker" /> event-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-03.png" alt="marker" /> event-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-04.png" alt="marker" /> event-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-05.png" alt="marker" /> event-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-06.png" alt="marker" /> event-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-07.png" alt="marker" /> event-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-08.png" alt="marker" /> event-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-09.png" alt="marker" /> event-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/event-10.png" alt="marker" /> event-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">House</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-01.png" alt="marker" /> house-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-02.png" alt="marker" /> house-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-03.png" alt="marker" /> house-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-04.png" alt="marker" /> house-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-05.png" alt="marker" /> house-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-06.png" alt="marker" /> house-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-07.png" alt="marker" /> house-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-08.png" alt="marker" /> house-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-09.png" alt="marker" /> house-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/house-10.png" alt="marker" /> house-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Restaurant</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-01.png" alt="marker" /> restaurant-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-02.png" alt="marker" /> restaurant-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-03.png" alt="marker" /> restaurant-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-04.png" alt="marker" /> restaurant-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-05.png" alt="marker" /> restaurant-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-06.png" alt="marker" /> restaurant-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-07.png" alt="marker" /> restaurant-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-08.png" alt="marker" /> restaurant-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-09.png" alt="marker" /> restaurant-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/restaurant-10.png" alt="marker" /> restaurant-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Taxi</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-01.png" alt="marker" /> taxi-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-02.png" alt="marker" /> taxi-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-03.png" alt="marker" /> taxi-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-04.png" alt="marker" /> taxi-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-05.png" alt="marker" /> taxi-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-06.png" alt="marker" /> taxi-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-07.png" alt="marker" /> taxi-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-08.png" alt="marker" /> taxi-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-09.png" alt="marker" /> taxi-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/taxi-10.png" alt="marker" /> taxi-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">User</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-01.png" alt="marker" /> user-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-02.png" alt="marker" /> user-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-03.png" alt="marker" /> user-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-04.png" alt="marker" /> user-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-05.png" alt="marker" /> user-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-06.png" alt="marker" /> user-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-07.png" alt="marker" /> user-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-08.png" alt="marker" /> user-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-09.png" alt="marker" /> user-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/user-10.png" alt="marker" /> user-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Gas</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-01.png" alt="marker" /> gas-01
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-02.png" alt="marker" /> gas-02
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-03.png" alt="marker" /> gas-03
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-04.png" alt="marker" /> gas-04
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-05.png" alt="marker" /> gas-05
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-06.png" alt="marker" /> gas-06
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-07.png" alt="marker" /> gas-07
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-08.png" alt="marker" /> gas-08
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-09.png" alt="marker" /> gas-09
+                                    </div>
+                                    <div class="col-sm-4 col-lg-3">
+                                        <img src="images/markers/gas-10.png" alt="marker" /> gas-10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+        <!-- Footer -->
+        <footer class="footer">
+            <strong>ThemeKit</strong> v3.6.3 &copy; Copyright 2015
+        </footer>
+        <!-- // Footer -->
+    </div>
+    <!-- Inline Script for colors and config objects; used by various external scripts; -->
+    <script>
+    var colors = {
+        "danger-color": "#e74c3c",
+        "success-color": "#81b53e",
+        "warning-color": "#f0ad4e",
+        "inverse-color": "#2c3e50",
+        "info-color": "#2d7cb5",
+        "default-color": "#6e7882",
+        "default-light-color": "#cfd9db",
+        "purple-color": "#9D8AC7",
+        "mustard-color": "#d4d171",
+        "lightred-color": "#e15258",
+        "body-bg": "#f6f6f6"
+    };
+    var config = {
+        theme: "real-estate",
+        skins: {
+            "default": {
+                "primary-color": "#3498db"
+            }
+        }
+    };
+    </script>
+    <!-- Separate Vendor Script Bundles -->
+    <script src="js/vendor-core.min.js"></script>
+    <!-- <script src="js/vendor-tables.min.js"></script> -->
+    <script src="js/vendor-forms.min.js"></script>
+    <script src="js/vendor-media.min.js"></script>
+    <!-- <script src="js/vendor-player.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-all.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-flot.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-morris.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-sparkline.min.js"></script> -->
+    <script src="js/vendor-maps.min.js"></script>
+    <!-- <script src="js/vendor-tree.min.js"></script> -->
+    <!-- <script src="js/vendor-nestable.min.js"></script> -->
+    <!-- <script src="js/vendor-angular.min.js"></script> -->
+    <!-- Compressed Vendor Scripts Bundle
+    Includes all of the 3rd party JavaScript libraries above.
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation.
+    Do not use it simultaneously with the separate bundles above. -->
+    <!-- <script src="js/vendor-bundle-all.min.js"></script> -->
+    <!-- Compressed App Scripts Bundle
+    Includes Custom Application JavaScript used for the current theme/module;
+    Do not use it simultaneously with the standalone modules below. -->
+    <script src="js/module-bundle-main.min.js"></script>
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL the modules are 100% compatible -->
+    <!-- <script src="js/module-essentials.min.js"></script> -->
+    <!-- <script src="js/module-layout.min.js"></script> -->
+    <!-- <script src="js/module-sidebar.min.js"></script> -->
+    <!-- <script src="js/module-media.min.js"></script> -->
+    <!-- <script src="js/module-player.min.js"></script> -->
+    <!-- <script src="js/module-timeline.min.js"></script> -->
+    <!-- <script src="js/module-chat.min.js"></script> -->
+    <!-- <script src="js/module-maps.min.js"></script> -->
+    <!-- <script src="js/module-charts-all.min.js"></script> -->
+    <!-- <script src="js/module-charts-flot.min.js"></script> -->
+    <!-- <script src="js/module-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/module-charts-morris.min.js"></script> -->
+    <!-- <script src="js/module-charts-sparkline.min.js"></script> -->
+    <!-- [real-estate] Core Theme Script:
+        Includes the custom JavaScript for this theme/module;
+        The file has to be loaded in addition to the UI modules above;
+        module-bundle-main.js already includes theme-core.js so this should be loaded
+        ONLY when using the standalone modules; -->
+    <!-- <script src="js/theme-core.min.js"></script> -->
+</body>
+</html>

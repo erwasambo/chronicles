@@ -4,7 +4,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |vconfig|
-    vconfig.vm.box = "precise64"
+    vconfig.vm.box = "precise64Box"
     vconfig.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
     vconfig.vm.define :site do |config|
